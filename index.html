@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<title>Carlos R Quintero M</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: rgb(32, 31, 31);
+  line-height: 1.9;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: solid;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://connectedworld.com/wp-content/uploads/2019/07/News_Analysis_7_10_19.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://i11c.3djuegos.com/juegos/13395/the_elder_scrolls_v_skyrim__special_edition/fotos/maestras/the_elder_scrolls_v_skyrim__special_edition-5004125.jpg");
+  min-height: 100%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-0/p526x296/120283078_10222990333096242_3709154344359096475_o.jpg?_nc_cat=106&_nc_sid=8bfeb9&_nc_ohc=L-I73hjQAI0AX8PO-kH&_nc_ht=scontent-cdt1-1.xx&tp=6&oh=395b622ed450061a287744dca031763b&oe=5F9456A5");
+  min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MI <span class="w3-hide-small"> PRIMERA </span> PAGINA WEB</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">MI HISTORIA</h3>
+
+  <p class="w3-center"><em> En este blog quiero contar un poco mi vida, sobre como ha cambiando  haciendo un cambio radical desde el mundo de la hosteleria y la alta cocina, al mundo  developer y la programacion web aunque aun estamos empesando  esta aventura, se que podremos avansar hasta llegar a mi meta de ser especialista en cyber seguridad. Acompañame en este camino bastante complejo en el cual te mostrare mis pequeños proyectos.   </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>CARLOS R QUINTERO M.</b></p><br>
+      <img src="https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-0/p526x296/120355095_10222990310815685_247600063101939896_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=qewy55bOz3AAX-hPdQv&_nc_ht=scontent-cdg2-1.xx&tp=6&oh=954f8d5b869eefbd96c8634c49a4cee1&oe=5F940843" class="w3-round w3-image w3-opacity  w3-hover-opacity-off" alt="Photo of Me" width="300" height=200>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p> Bienvenidos a mi primera pagina web. Quiero contarte la historia de como estoy intentado hacer un cambio de carrera y de perspectiva en mi vida , siempre me llamo la atencion este mundo de developers y poder integrarme en este mundo digital espero este trabajo pueda gustarte.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Soy realmente bueno en!!:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i> Fotografia</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Programación</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Resolucion de Problemas</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-darkgrey w3-wide">PORTAFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-0/p526x296/120283078_10222990333096242_3709154344359096475_o.jpg?_nc_cat=106&_nc_sid=8bfeb9&_nc_ohc=L-I73hjQAI0AX8PO-kH&_nc_ht=scontent-cdt1-1.xx&tp=6&oh=395b622ed450061a287744dca031763b&oe=5F9456A5" style="width:100% " onclick="onClick(this)" class="w3-hover-opacity" alt="Dexter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/49939058_10217619317664213_1672862488749670400_n.jpg?_nc_cat=109&_nc_sid=09cbfe&_nc_ohc=pyLS0z48yF0AX88wXim&_nc_ht=scontent-mad1-1.xx&oh=4a1bee519bf7a158502886f3fb6097b1&oe=5F96ED22" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-0/c0.0.206.206a/p206x206/80296486_2788478027885046_4333769306157350912_o.jpg?_nc_cat=109&_nc_sid=da31f3&_nc_ohc=W3B_DoHsPe4AX8KOWID&_nc_ht=scontent-mad1-1.xx&_nc_tp=27&oh=d63cfcdcb21be103ab8f441bffa763f8&oe=5F95ECF5" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My love">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7XRMr0rjGXZGSiOQ111yxGEbVPnYoWXwguQ&usqp=CAU" style="border: 40% ;" onclick="onClick(this)" class="w3-hover-opacity" alt="sueños">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACTO</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">DONDE TRABAJO!.</h3>
+  <p class="w3-center"><em> Me encantaría recibir tus comentarios.</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://static2.lasprovincias.es/www/multimedia/201801/08/media/cortadas/ciudad-artes-kXbB-U50574220968wkD-624x385@Las%20Provincias.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> VALENCIA .ESPAÑA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +34 695029781<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> CORREO: CarlosQuintero92.cq@gmail.com<br>
+      </div>
+      <p>Si quieres ir por una <i class="fa fa-beer"></i>, dejame una nota:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Correo">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Mensaje">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE 
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+
+    <a class="fa fa-facebook-official w3-hover-opacity"  href="https://www.facebook.com/carlosramon.quintero" target="_blank">
+    </a>
+    <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/carlosquintero92/?hl=es" target="_blank"></a>
+    <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/carlos-quintero-moreno-3113a315a/"></a>
+    <a class="fa fa-address-card w3-hover-opacity" ></a>
+  </div>
+  <p> <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
